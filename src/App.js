@@ -2,6 +2,7 @@ import './App.css';
 import React, { useState, useEffect } from 'react';
 import AOS from 'aos'; //Library used for fade in animation
 import 'aos/dist/aos.css';
+import hampdenAudio from './assets/Hampden_parks.mp3';
 
 
 
@@ -16,9 +17,9 @@ const coolOpeningClick = () => {
     void glasses.offsetWidth;
     glasses.classList.add("glasses-animate");
 
-    const audio = new Audio('/assets/Hampden_parks.mp3');
+    const audio = new Audio(hampdenAudio);
     audio.play().catch(error => {
-      console.error("Playbacj failed:", error);
+      console.error("Playback failed:", error);
     });
   }
 };
