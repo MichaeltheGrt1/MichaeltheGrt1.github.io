@@ -2,7 +2,6 @@ import './App.css';
 import React, { useState, useEffect } from 'react';
 import AOS from 'aos'; //Library used for fade in animation
 import 'aos/dist/aos.css';
-import hampdenAudio from './assets/Hampden_parks.mp3';
 
 
 
@@ -17,7 +16,7 @@ const coolOpeningClick = () => {
     void glasses.offsetWidth;
     glasses.classList.add("glasses-animate");
 
-    const audio = new Audio(hampdenAudio);
+    const audio = new Audio('./assets/Hampden_Parks.mp3');
     audio.play().catch(error => {
       console.error("Playback failed:", error);
     });
@@ -113,11 +112,13 @@ function App() {
             <div id="banner-content">
               <h1 id="my-name">Michael Kaulfuss</h1>
                 <div className="profile-wrapper">
-                  <button
+
+                  {/* <button
                     className="speech-bubble"
                     onClick={handleClick}
                   >Click here to get started!
-                  </button>
+                  </button> */}
+
                   <img src="/assets/image0.jpg" alt="Profile Picture" id="profile-pic" />
                 </div>
               <p id="banner-subtext"><i>Computer Science and Cybersecurity Student at WVU</i></p>
