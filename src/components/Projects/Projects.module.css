@@ -1,0 +1,13 @@
+.projects-section{
+    scroll-margin-top: 5vh;
+}
+
+
+.project-elements {
+  display: flex;
+  flex-wrap: wrap;            /* Allows cards to wrap on smaller screens */
+  justify-content: center;    /* Centers them horizontally */
+  gap: 20px;                  /* Adds spacing between cards */
+  text-align: center;
+}
+

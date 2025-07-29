@@ -1,0 +1,36 @@
+.education-title{
+    padding-top: 3rem;
+    text-align: center;
+}
+
+.education-section{
+    scroll-margin-top: 5vh;
+}
+
+.education-elements {
+  display: flex;
+  flex-wrap: wrap;            /* Allows cards to wrap on smaller screens */
+  justify-content: center;    /* Centers them horizontally */
+  gap: 20px;                  /* Adds spacing between cards */
+  text-align: row;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    margin: 20px auto;
+    max-width: 800px;
+    border-radius: 10px;
+    background-color: white;
+    width: 18rem;
+}
+
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.3);
+  transform: translateY(-4px);
+}
+
+.container {
+  padding: 24px;
+}

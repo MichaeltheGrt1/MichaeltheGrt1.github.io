@@ -1,0 +1,15 @@
+.work-title{
+    text-align: center;
+    padding-top: 3rem;
+}
+
+.experience-section {
+    scroll-margin-top: 15vh;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+    max-width: 1200px;
+    margin: auto;
+    text-align: row;
+}

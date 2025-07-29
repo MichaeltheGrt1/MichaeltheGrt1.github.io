@@ -1,0 +1,54 @@
+.skills-section {
+  scroll-margin-top: 5vh;
+}
+
+.skills-title {
+  text-align: center;
+  padding-top: 3rem;
+}
+
+.skills-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px; /* Slightly more space between items */
+}
+
+.skills-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 120px; /* Adjust width of containers to fit the images better */
+  transition: transform 0.2s ease;
+}
+
+.skills-container:hover {
+  transform: scale(1.05);
+}
+
+.skills-image {
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border: 2px solid #ccc;
+}
+
+.skills-description {
+  margin-top: 10px; /* Increased spacing between the image and description */
+  font-size: 1rem; /* Increased font size for readability */
+  color: #333;
+  font-weight: bold;
+  text-align: center; /* Ensures the description is centered */
+}
+
+/* Responsive behavior */
+@media (max-width: 600px) {
+  .skills-wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+  .skills-container {
+    width: 80%; /* Make the containers take up more width on small screens */
+  }
+}
